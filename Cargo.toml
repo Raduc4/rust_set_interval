@@ -1,0 +1,30 @@
+[package]
+name = "js_interval_issue"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+reqwest = { version = "0.11", features = ["json"] }
+sha-1 = "0.10.0"
+hex = "0.4"
+futures = "0.3.23"
+tokio = { version = "1", features = ["full"] }
+error-chain = "0.12.4"
+scraper = "0.13.0"
+serde = {version = "1.0.137", features= ["derive"]}
+diesel_migrations = "1.4.0"
+diesel = { version = "1.4.8",features = ["chrono", "postgres", "serde_json", "r2d2" ] }
+chrono = "0.4.19"
+dotenv = "0.15.0"
+uuid = {version = "1.1.2", features = ["v4", "fast-rng","serde"]}
+actix-cors = "0.6.1"
+serde_json = "1.0.81"
+env_logger = "0.9.0"
+log = "0.4.14"
+mockall = "0.11.1"
+tokio-js-set-interval = {git = "https://github.com/phip1611/tokio-js-set-interval.git", branch = "async-callback"}
+regex = "1" 
+anyhow = "1.0.58"
